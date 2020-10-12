@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/sp01-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/sp02-itemservice/pom.xml" />
+        <option value="$PROJECT_DIR$/sp03-userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/sp04-orderservice/pom.xml" />
+        <option value="$PROJECT_DIR$/sp05-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/sp08-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/sp09-tubine/pom.xml" />
+        <option value="$PROJECT_DIR$/sp11-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/sp12-config/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

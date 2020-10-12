@@ -1,0 +1,9 @@
+# application-eureka1.yml
+eureka:
+  instance:
+    hostname: eureka1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka2:2002/eureka

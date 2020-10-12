@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: zuul
+  cloud:
+    config:
+      override-none: true
+
+  rabbitmq:
+    host: 192.168.64.140  # wht6.cn
+    port: 5672
+    username: admin
+    password: admin
+    # virtual-host: /wht
+
+  zipkin:
+    sender:
+      type: rabbit
+
+
+server:
+  port: 3001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+
+zuul:
+  routes:
+    item-service: /item-service/**
+    user-service: /user-service/**
+    order-service: /order-service/**
+  retryable: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

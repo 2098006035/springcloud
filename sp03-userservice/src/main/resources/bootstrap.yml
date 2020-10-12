@@ -1,0 +1,16 @@
+# bootstrap.yml
+# 连 eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+# 发现配置中心（指定配置中心的服务id）
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      # 下载的配置文件
+      name: user-service
+      profile: dev
